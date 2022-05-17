@@ -1,0 +1,15 @@
+
+{% extends "Voiture/main.html" %}
+
+{% block content %}
+{% for l in liste %}
+
+
+
+<ul class="classlist">
+     <li class="lilist"> La marque {{l}} a été crée le {{l.date_parution_Marque|date:"d/m/Y"}}<br> Pays d'origine de la marque : {{l.pays_Marque}}<br><br>Détail sur {{l}} : {{l.description}} <a href="affiche/{{l.id}}"><button>Afficher les modèles </button></a> <a href="delete/{{l.id}}"><button>Effacer</button></a> <a href="update/{{l.id}}"><button>Modifier</button></a></li>
+</ul>
+{%endfor%}
+<img src="/static/voituree.png">
+
+{% endblock %}

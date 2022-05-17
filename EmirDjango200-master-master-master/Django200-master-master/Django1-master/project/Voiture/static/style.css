@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+}
+description{
+    color : blue ;
+    background-color:blue;
+
+
+
+}
+
+ul {
+    background-color: #ABDFE0;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    color:white;
+}
+
+
+
+.navig .listitem{
+    display:inline-block;
+    padding:20px 10px;
+}
+
+.navbar a{
+    color:#1e94c9;
+    text-decoration:none;
+    font-size:25px;
+    transition:0.5s;
+}
+.navbar a:hover{
+    color:#020024;
+}
+
+
+
+
+
+form{
+
+    background: linear-gradient(#D9AFD9, #97D9E1);
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    margin-top:75px;
+    margin-left:400px;
+    width:50vw;
+    border-radius:10px;
+    box-shadow:1px 1px 1px 1px #097179;
+}
+
+li{
+    list-style-type:none;
+    padding:7px;
+}
+
+label{
+    font-family:system-ui,arial;
+}
+
+body{
+
+    background-color:#C8F4F5;
+}
+.image{
+    display:flex;
+    flex-direction:column;
+}
+
+.classlist{
+    background: linear-gradient(#D9AFD9, #97D9E1);
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    margin-top:70px;
+    margin-left:100px;
+    width:40vw;
+    border-radius:15px;
+    box-shadow:1px 1px 1px 1px #097179;
+    color : black;
+}
+
+.classlist > .lilist{
+    list-style-type:none;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+img{
+    margin-left: 60%;
+    width : 30%;
+
+}
+

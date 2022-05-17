@@ -1,0 +1,16 @@
+
+
+{% extends "Voiture/main.html" %}
+{% block content %}
+
+<h2> Liste des voiture dans la marque {{marque}} : </h2>
+{% for m in modele %}
+<ul class="classlist">
+   Le modèle {{m.nom_modele}} a été crée en {{m.date_creation_modele}} , {{m.nombre_modele}} exemplaires de ce modèle à été produit dans le monde entier.<br><br>
+    Détail sur {{m.nom_modele}} :
+    {{m.description}}
+     <a href="/Voiture/delete2/{{m.id}}"><button>Effacer</button></a> <a href="/Voiture/update2/{{m.id}}"><button>Modifier</button></a></li>
+</ul>
+{% endfor %}
+{% endblock %}
+

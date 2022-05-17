@@ -1,0 +1,13 @@
+
+
+
+{% extends "Voiture/main.html" %}
+{% block content %}
+    <form action="/Voiture/traitement/" method="POST">
+    {% csrf_token %}
+    {{ form.as_ul }}
+    <input type="submit" value="Envoyer"/>
+    </form>
+
+{% endblock %}
+

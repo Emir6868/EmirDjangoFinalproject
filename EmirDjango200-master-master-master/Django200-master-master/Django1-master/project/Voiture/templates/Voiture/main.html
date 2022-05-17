@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link href="{%static 'style.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="Voiture">
+    </div>
+        </div>
+
+    <ul class="navig" id="list">
+
+
+ <li class="listitem"><a href="/Voiture/">HOME</a></li>
+
+ <li class="listitem"><a href="/Voiture/ajout/">Ajouter une marque</a></li>
+
+<li class="listitem"><a href="/Voiture/ajout2/">Ajouter un modèle</a></li>
+    </ul>
+</nav>
+
+
+{% block content %}
+
+{% endblock %}
+</body>
+</html>

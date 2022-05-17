@@ -1,0 +1,9 @@
+
+{% extends "Voiture/main.html" %}
+{% block content %}
+    <form method="post" action="/Voiture/traitementupdate/{{id}}">
+    {% csrf_token %}
+    {{ form.as_ul }}
+    <input type="submit" value="Envoyer"/>
+    </form>
+{% endblock %}

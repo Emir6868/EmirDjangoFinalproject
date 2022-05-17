@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends "Voiture/main.html" %}
+{% block title %}
+{% endblock %}
+{% block content %}
+    <form method="post" action="/Voiture/traitementupdate2/{{id}}">
+    {% csrf_token %}
+    {{ form.as_ul }}
+    <input type="submit" value="Envoyer"/>
+    </form>
+{% endblock %}
+</body>
+</html>
